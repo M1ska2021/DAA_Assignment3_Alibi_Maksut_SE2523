@@ -102,13 +102,13 @@ While all traversal algorithms (Kosaraju, Kahn, DAG SP, and Prim's edge scans) s
 All three plots were programmatically generated from `results/results.csv` and are saved in `results/plots/`.
 
 ### 6.1 Plot 1: Operations vs. $n$ (Log-Log Scale)
-![Operations vs n](file:///Users/jl/.gemini/antigravity/scratch/DAA_Assignment3_Alibi_Maksut_SE2523/results/plots/ops_vs_n.png)
+![Operations vs n](results/plots/ops_vs_n.png)
 
 - **Observations:** On log-log axes, Kosaraju, Kahn, DAG SP, and Prim appear as parallel straight lines with constant slope 1.00 across five orders of magnitude. Dense graphs lie exactly vertically shifted by a factor of 5 ($\log_{10} 5 \approx 0.70$) above sparse graphs, precisely mirroring the density ratio $m = 20n$ versus $m = 4n$.
 - Kruskal's curve shows a slight upward curvature relative to the linear traversals due to edge sorting comparisons.
 
 ### 6.2 Plot 2: Scans Per Edge ($\text{edgeScans} / m$ vs. $n$)
-![Scans Per Edge](file:///Users/jl/.gemini/antigravity/scratch/DAA_Assignment3_Alibi_Maksut_SE2523/results/plots/scans_per_edge.png)
+![Scans Per Edge](results/plots/scans_per_edge.png)
 
 - **Observations:** Horizontal, perfectly flat lines at constant values confirm linear time complexity:
   - Kosaraju: Constant horizontal line at exactly $2.00$ ($\text{edgeScans} = 2m$).
@@ -117,7 +117,7 @@ All three plots were programmatically generated from `results/results.csv` and a
   - Prim: Constant horizontal line at exactly $2.00$ ($\text{edgeScans} = 2m$ on undirected adjacency lists).
 
 ### 6.3 Plot 3: Share of Edges Kruskal Examines ($\text{edgeScans} / m$)
-![Share of Edges Kruskal Examines](file:///Users/jl/.gemini/antigravity/scratch/DAA_Assignment3_Alibi_Maksut_SE2523/results/plots/kruskal_edge_share.png)
+![Share of Edges Kruskal Examines](results/plots/kruskal_edge_share.png)
 
 - **Observations:** This plot highlights where each MST algorithm excels:
   - On **dense graphs ($m = 20n$)**, Kruskal examines only **$20\% - 37\%$** of total edges before collecting $n - 1$ tree edges and breaking early.

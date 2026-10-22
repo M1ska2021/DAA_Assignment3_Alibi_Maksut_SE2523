@@ -118,7 +118,7 @@ java -Xmx2g -cp target/classes daa.Main
 
 ## AI-Use Acknowledgement
 
-AI tools (Antigravity assistant) were consulted during development for assistance with:
+AI tools (AI assistant) were consulted during development for assistance with:
 - Reviewing theoretical complexity bounds and mathematical cut property formulations.
 - Formulating the layout of Markdown and PDF report structures.
 - Debugging iterative explicit stack pointer handling.
